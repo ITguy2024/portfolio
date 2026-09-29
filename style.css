@@ -74,3 +74,16 @@
     left:20px;
   }
 }
+.architecture-visual {
+  padding: 12px;
+  min-height: 0;
+}
+
+.architecture-visual > img:first-child {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 14px 40px #0002;
+}
