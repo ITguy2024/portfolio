@@ -1,0 +1,8 @@
+
+# Local backups
+*.before-*.html
+*.before-*.css
+*.before-*.js
+
+# Editor backup files
+*~
