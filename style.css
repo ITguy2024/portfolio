@@ -199,3 +199,71 @@
     height: 200px;
   }
 }
+
+/* AgentDesk AI — Portfolio Presentation */
+
+.agentdesk-featured .visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 380px;
+  padding: 22px;
+}
+
+.agentdesk-featured .visual > img:first-child {
+  position: static;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.agentdesk-featured .visual > img.inset {
+  display: none;
+}
+
+.agentdesk-gallery .leadflow-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.agentdesk-gallery .leadflow-gallery-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.agentdesk-gallery .leadflow-gallery-item img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.agentdesk-gallery .leadflow-gallery-item span {
+  display: block;
+  padding: 14px 18px;
+}
+
+@media (max-width: 900px) {
+  .agentdesk-gallery .leadflow-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .agentdesk-gallery .leadflow-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agentdesk-gallery .leadflow-gallery-item img {
+    height: 220px;
+  }
+}
