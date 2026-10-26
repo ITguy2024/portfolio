@@ -329,3 +329,27 @@
         height: 260px;
     }
 }
+/* AgentDesk AI — Improved screenshot gallery */
+.agentdesk-gallery .leadflow-gallery-item {
+  overflow: hidden;
+}
+
+.agentdesk-gallery .leadflow-gallery-item img {
+  display: block !important;
+  width: 100% !important;
+  height: 260px !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+
+/* Prevent older gallery rules from shrinking images */
+.agentdesk-gallery .leadflow-gallery-item img {
+  min-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .agentdesk-gallery .leadflow-gallery-item img {
+    height: 220px !important;
+  }
+}
